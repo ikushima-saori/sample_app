@@ -34,6 +34,6 @@ class ListsController < ApplicationController
   private
   # ストロングパラメータ
   def list_params
-    params.require(:list).permit(:title, :body, :image)
+    params.require(:list).permit(:title, :body, :image) #paramsの中の(:list)をrequire許可するけど、.(:title, :body, :image)だけpermit選びます
   end
 end
